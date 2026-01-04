@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Isometric Desk Pomodoro</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+
+        <h1 id="mode-label">Work</h1>
+        <div id="timer">25:00</div>
+
+        <button id="start-btn">Start</button>
+
+        <!-- Isometric Room -->
+        <svg id="room" width="400" height="300" viewBox="0 0 400 300">
+
+            <!-- Wall -->
+            <polygon points="50,50 350,50 350,200 50,200" fill="#e0d7c6" />
+
+            <!-- Desk -->
+            <polygon points="120,200 280,200 320,240 160,240" fill="#b08968" />
+
+            <!-- Lamp (interactive) -->
+            <circle id="lamp" cx="150" cy="140" r="12" fill="#ffd166" style="cursor: pointer;" />
+
+            <!-- Radio (interactive) -->
+            <rect id="radio" x="240" y="160" width="30" height="20" rx="4" fill="#6d597a" style="cursor: pointer;" />
+
+        </svg>
+
+        <audio id="lofi" src="lofi.mp3" loop></audio>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
