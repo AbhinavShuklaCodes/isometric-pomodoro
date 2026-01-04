@@ -35,3 +35,32 @@ button {
 svg {
     margin-top: 30px;
 }
+
+#lamp-glow.active {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        fill: rgba(255, 209, 102, 0.2);
+    }
+
+    to {
+        fill: rgba(255, 209, 102, 0.6);
+    }
+}
+
+/* Radio pulse */
+#radio.playing {
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0.7;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
